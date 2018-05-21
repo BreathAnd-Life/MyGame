@@ -1,0 +1,13 @@
+public class ShadowMove : MonoBehaviour {
+
+	public GameObject shadow;
+	// Use this for initialization
+	void Start () {
+		
+	}
+
+	// Update is called once per frame
+	void Update () {
+		shadow.transform.LookAt (new Vector3 (gameObject.transform.position.x, 0, gameObject.transform.position.z));
+	}
+}
